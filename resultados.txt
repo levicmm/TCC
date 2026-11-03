@@ -1,0 +1,59 @@
+======================================================================
+RELATÓRIO DE RESULTADOS - SIMULAÇÕES DO TCC (DATA CENTER & REDES ELÉTRICAS)
+======================================================================
+
+--- ETAPA 1 & 2: SISTEMA IEEE 14 BARRAS ---
+Status: LOCALLY_SOLVED
+Custo Base: $ 160.32 /h
+Tensão Mínima Base: 1.0114 pu | Tensão Máxima Base: 1.0600 pu
+Custo com Data Center Estático: $ 9353.01 /h
+Tensão na Barra 14 (Estático):   0.9564 pu
+
+--- ETAPA 3: ESTOCÁSTICO (IEEE 14) ---
+Cenário 1  | Fator 0.90  | $ 8081.53         | 0.9631 pu
+Cenário 2  | Fator 0.95  | $ 8399.78         | 0.9614 pu
+Cenário 3  | Fator 1.00  | $ 8719.25         | 0.9596 pu
+Cenário 4  | Fator 1.05  | $ 9144.12         | 0.9580 pu
+Cenário 5  | Fator 1.10  | $ 9571.19         | 0.9564 pu
+
+--- ETAPA 4: VARREDURA NODAL (TOP 3 - IEEE 14) ---
+Barra 13 | $ 9390.52          | 1.0055 pu          | 1.0017 pu
+Barra 12 | $ 9404.46          | 0.9890 pu          | 0.9890 pu
+Barra 14 | $ 9430.99          | 0.9622 pu          | 0.9622 pu
+
+--- ETAPA 5: MITIGAÇÃO BESS (PEAK SHAVING - BARRA 14 / IEEE 14) ---
+--- CENÁRIO CRÍTICO (SEM BESS) ---
+Custo Total: USD 9572.29/h | Tensão Barra 14: 0.9564 pu
+--- CENÁRIO COM MITIGAÇÃO BESS (5 MW de Descarga) ---
+Custo Total: USD 9349.68/h | Tensão Barra 14: 0.9625 pu
+Melhoria na Tensão da Barra 14: +0.0061 pu
+
+======================================================================
+
+--- ETAPA 1 & 2: SISTEMA IEEE 118 BARRAS ---
+Status do Caso Base (118): LOCALLY_SOLVED
+Custo Base (118): $ 129750.12 /h
+Tensão Mínima: 0.9550 pu | Tensão Máxima: 1.0550 pu
+Custo com Data Center na Barra 118 (118): $ 130994.24 /h
+Tensão na Barra Alvo: 0.9913 pu
+Tensão Mínima Global da Rede: 0.9913 pu
+
+--- ETAPA 3: ESTOCÁSTICO (IEEE 118) ---
+Cenário 1  | Fator 0.90  | $ 130541.10        | 0.9920 pu
+Cenário 2  | Fator 0.95  | $ 130831.02        | 0.9911 pu
+Cenário 3  | Fator 1.00  | $ 131019.06        | 0.9893 pu
+Cenário 4  | Fator 1.05  | $ 131070.15        | 0.9901 pu
+Cenário 5  | Fator 1.10  | $ 131122.61        | 0.9902 pu
+
+--- ETAPA 4: VARREDURA NODAL (TOP 3 - IEEE 118) ---
+Barra 53  | $ 131017.89          | 0.9919 pu          | 0.9919 pu
+Barra 52  | $ 131019.06          | 0.9893 pu          | 0.9893 pu
+Barra 44  | $ 131024.01          | 0.9970 pu          | 0.9970 pu
+
+--- ETAPA 5: MITIGAÇÃO BESS (PEAK SHAVING - BARRA 52 / IEEE 118) ---
+--- CENÁRIO CRÍTICO (SEM BESS) ---
+Custo Total: USD 131019.06/h | Tensão Barra 52: 0.9893 pu
+--- CENÁRIO COM MITIGAÇÃO BESS (5 MW de Descarga) ---
+Custo Total: USD 130940.83/h | Tensão Barra 52: 0.9891 pu
+Melhoria na Tensão da Barra 52: +0.0016 pu
+======================================================================
